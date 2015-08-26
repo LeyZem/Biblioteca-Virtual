@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A77E1EB-3090-4216-A939-93E99E2ECDB7}</ProjectGuid>
+    <ProjectGuid>{96E3123F-C955-4B67-9A7C-3BC0C0CC40A3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Biblioteca.View</RootNamespace>
@@ -45,14 +45,86 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CONSULTAS\frmConsultaAlunos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CONSULTAS\frmConsultaAlunos.Designer.cs">
+      <DependentUpon>frmConsultaAlunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAS\frmConsultaAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAS\frmConsultaAutores.Designer.cs">
+      <DependentUpon>frmConsultaAutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAS\frmConsultaEditoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAS\frmConsultaEditoras.Designer.cs">
+      <DependentUpon>frmConsultaEditoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAS\frmConsultaGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAS\frmConsultaGeneros.Designer.cs">
+      <DependentUpon>frmConsultaGeneros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAS\frmConsultaLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAS\frmConsultaLivros.Designer.cs">
+      <DependentUpon>frmConsultaLivros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroAluno.Designer.cs">
+      <DependentUpon>frmCadastroAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroAutor.Designer.cs">
+      <DependentUpon>frmCadastroAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroEditora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroEditora.Designer.cs">
+      <DependentUpon>frmCadastroEditora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroGenero.Designer.cs">
+      <DependentUpon>frmCadastroGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CADASTROS\frmCadastroLivro.Designer.cs">
+      <DependentUpon>frmCadastroLivro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobre.Designer.cs">
+      <DependentUpon>frmSobre.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CADASTROS\frmCadastroAluno.resx">
+      <DependentUpon>frmCadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
