@@ -122,6 +122,12 @@
     <EmbeddedResource Include="CADASTROS\frmCadastroAluno.resx">
       <DependentUpon>frmCadastroAluno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CADASTROS\frmCadastroAutor.resx">
+      <DependentUpon>frmCadastroAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CADASTROS\frmCadastroEditora.resx">
+      <DependentUpon>frmCadastroEditora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>

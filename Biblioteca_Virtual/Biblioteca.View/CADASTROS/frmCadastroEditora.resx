@@ -117,60 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnSalvar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAUFJREFUWEe9
-        l4ttwkAQRCmBElJCOiClpAQ6IB1AB0kJ6QA6oBTSQZhBvuiyvDMWPu9IT4LZ24+NtRYraS324iJ+A2/C
-        +hAx9gjnTNJBUAHTY4AX4Ytsiq680GMA1ziL5hCUXOg1gL83h4iJNT0HMDhEnRQpA7wLio/hHKsewNwN
-        UQcjX2KuXCPW/TdEDEZ2ovkAjcg5zqWa5m8ICmZxFBjIBM1M0MwEzUzQzATNH/EtvM164FquSb3QLBuw
-        p+JGLLC5kLAXmoO8qT6FF8YzOLfeotgLzUHPvIQi5aVkUZzNQZ5+K+jBmoJzZ92B3sJeaIJexWYiPkvC
-        XmgGuSCdG4OGoHNsBvl39DI5TcRn69++CHuhuZCwF5oLCXuRGRfIXLmWa1IvNDNBM5PmazID9x79c7o0
-        7n17QPwh8064l3qu1leMaMV4J9UYfAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnNovo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAJFJREFUWEft
-        18ENQEAUhOEtSQlKUIJOKEEHWlCCzphJnMTyvLfLZSb5EwfZ/U4S6bQJbc4aNKIeubeiq8MttYgAPrsR
-        pQDMhSgJYAN6tdIANiPzagCYGVELwEyImgD2iIgC+C3gGXd1KDu+cHW4JQLCiwCsLSi7LwC8IzsBBBBA
-        AAEEEEAAAX4HRH7PrfGOYynta0XuUpITUy8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnCancelar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAS9JREFUWEe1
-        l+0NwjAMRDMaIzACI7ARjMAGsAFsBL6Ii1pwmlycnnR/SOX3+Ciq0yIH6936tj6tR+usYBZmYjYYYK1y
-        suLwtxdrNJjhzQYzBzbeBWxEogZn8yfxWLxQ64hEC46C7R54VSR64Gx6/byw1R4JBQ52/oV6h7VuSShw
-        tNxpV6t3Qa2ehAoHc5WIRBjOjEhMgzOqhNImnNlDohvOzJSQ4cwMiWE4E5EIw5kRiWlwRL3V0OX/RCgj
-        cDYsEYGzwxIz4KwsMRPOdkvsAWebEir8bFVv0aqECi9PtZawRATODEuoj2QenFEl8iMZN5aebsEZRQJs
-        98BrD5xRJLoWEwXO9EjkxaS1mo3AmZZEWVIB8S6IwJmaxN9s2PDrwMZSloYJwSxuYDfr952n9AHERFsV
-        EiaHCQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnDeletar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAL9JREFUWEft
-        ltEJAjEQRFOKJVmCJdiBlmIplmAH2oEl6AxcQLgJmehG/dgHDwKbuR04Dq4MsoF3+GjIGe+8Re/hUTZL
-        HqEKzHAPV3yzAHet2EJ1eYbcJdlBtpspd/w/bHqYoI16bxHaqHCENiocoY0K09OimtHe3EaFL7DC8+ic
-        2qjwGVZ4Hp1TGxXOAlkgC2SBLPDzAldYucHRObVRYcolVM1ob26jwhHaqHCENiocoY0KR2jT+qX6xNfP
-        dKGUJ8NIUN5rMhztAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnProcurar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAHQSURBVFhHxdYNTQQxFATgk4AEJCABCTgAB+AAHIADcAAOwAE4AAfgAN5HbpINue327kpukkl2
-        t+2bvr9uV3vguHhZfC6+Fr/X9OybsZPicDBKIIJvxYfizZqeX4oZN/e0OAS3RUa/ihfFo+IcjJnzUbTm
-        vrgzGHssMnS3fg9E5HrNMx82QGSslZ7WpmcRcR4F58X3ou8hoTnYnMjZxFbg8VScByk6uWa41ytzretO
-        h0q3wCYg4jyZC/cSko6uwlTRxOJhxPdtL4WpO5qI98mrFHjf1fMpYqvpSCbZCCg4OR8BEWX76vdtBk9F
-        oYJEY9oF+8IB1nTIYCYkGr3V3gP11WxJIU/1p3JHYtGm8NslKJZsZhQWNzBNwX+Ac+pgFiZIw39B/psO
-        ahEh2vfQ2YR0VbMN06s5iEYizuWMmYU0fBZHth9bbHbVV0LldzwK+bsueg92m39+M1+dyIHW1dLE898P
-        XTR3RcQd8YvYJB5KxzY1Ya4LiLXEF9e2xHPBVETugK0WlWNzzLWmq5ta4k4t4wzrjnxXIy4XvETPqRs0
-        t7vglsSn8C6vBLSU6KBnoTb2d80sthUfioOKg3AdTBwOKg6K5mDioJezia6DYhxWqx+fo8JhcSCvoAAA
-        AABJRU5ErkJggg==
-</value>
-  </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
