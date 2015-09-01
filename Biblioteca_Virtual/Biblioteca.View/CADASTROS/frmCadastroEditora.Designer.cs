@@ -60,7 +60,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmbPais = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -410,26 +410,55 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(398, 161);
+            this.label4.Location = new System.Drawing.Point(466, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 16);
+            this.label4.Size = new System.Drawing.Size(39, 16);
             this.label4.TabIndex = 74;
-            this.label4.Text = "Nacionalidade";
+            this.label4.Text = "País";
             // 
-            // textBox1
+            // cmbPais
             // 
-            this.textBox1.Location = new System.Drawing.Point(514, 160);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 20);
-            this.textBox1.TabIndex = 75;
+            this.cmbPais.FormattingEnabled = true;
+            this.cmbPais.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP ",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC\t ",
+            "SP\t ",
+            "SE\t ",
+            "TO"});
+            this.cmbPais.Location = new System.Drawing.Point(514, 155);
+            this.cmbPais.Name = "cmbPais";
+            this.cmbPais.Size = new System.Drawing.Size(228, 21);
+            this.cmbPais.TabIndex = 75;
             // 
             // frmCadastroEditora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.cmbPais);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.cmbUF);
             this.Controls.Add(this.label13);
@@ -498,6 +527,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmbPais;
     }
 }
