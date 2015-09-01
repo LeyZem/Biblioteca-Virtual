@@ -33,8 +33,8 @@
             this.btnProcurar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_ID = new System.Windows.Forms.TextBox();
-            this.txt_Nome = new System.Windows.Forms.TextBox();
+            this.txt_ID_Pesquisa = new System.Windows.Forms.TextBox();
+            this.txt_Descricao_Pesquisa = new System.Windows.Forms.TextBox();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
@@ -57,8 +57,8 @@
             this.groupBox1.Controls.Add(this.btnProcurar);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txt_ID);
-            this.groupBox1.Controls.Add(this.txt_Nome);
+            this.groupBox1.Controls.Add(this.txt_ID_Pesquisa);
+            this.groupBox1.Controls.Add(this.txt_Descricao_Pesquisa);
             this.groupBox1.Location = new System.Drawing.Point(246, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(526, 42);
@@ -90,9 +90,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(155, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 16);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 26;
-            this.label2.Text = "Nome";
+            this.label2.Text = "Desc.";
             // 
             // label1
             // 
@@ -104,19 +104,19 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Id.";
             // 
-            // txt_ID
+            // txt_ID_Pesquisa
             // 
-            this.txt_ID.Location = new System.Drawing.Point(41, 16);
-            this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(101, 20);
-            this.txt_ID.TabIndex = 22;
+            this.txt_ID_Pesquisa.Location = new System.Drawing.Point(41, 16);
+            this.txt_ID_Pesquisa.Name = "txt_ID_Pesquisa";
+            this.txt_ID_Pesquisa.Size = new System.Drawing.Size(101, 20);
+            this.txt_ID_Pesquisa.TabIndex = 22;
             // 
-            // txt_Nome
+            // txt_Descricao_Pesquisa
             // 
-            this.txt_Nome.Location = new System.Drawing.Point(210, 16);
-            this.txt_Nome.Name = "txt_Nome";
-            this.txt_Nome.Size = new System.Drawing.Size(251, 20);
-            this.txt_Nome.TabIndex = 23;
+            this.txt_Descricao_Pesquisa.Location = new System.Drawing.Point(210, 16);
+            this.txt_Descricao_Pesquisa.Name = "txt_Descricao_Pesquisa";
+            this.txt_Descricao_Pesquisa.Size = new System.Drawing.Size(251, 20);
+            this.txt_Descricao_Pesquisa.TabIndex = 23;
             // 
             // btnDeletar
             // 
@@ -403,8 +403,8 @@
         private System.Windows.Forms.Button btnProcurar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_ID;
-        private System.Windows.Forms.TextBox txt_Nome;
+        private System.Windows.Forms.TextBox txt_ID_Pesquisa;
+        private System.Windows.Forms.TextBox txt_Descricao_Pesquisa;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnNovo;

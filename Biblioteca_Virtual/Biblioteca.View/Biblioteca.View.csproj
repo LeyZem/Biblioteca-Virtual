@@ -131,6 +131,9 @@
     <EmbeddedResource Include="CADASTROS\frmCadastroGenero.resx">
       <DependentUpon>frmCadastroGenero.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CADASTROS\frmCadastroLivro.resx">
+      <DependentUpon>frmCadastroLivro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
