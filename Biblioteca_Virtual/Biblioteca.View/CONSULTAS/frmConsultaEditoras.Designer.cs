@@ -32,21 +32,19 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtgAlunos = new System.Windows.Forms.DataGridView();
+            this.dtgEditoras = new System.Windows.Forms.DataGridView();
             this.btnProcurar = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbUF = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtCidade = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCPF = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.cmbPaís = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAlunos)).BeginInit();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEditoras)).BeginInit();
             this.SuspendLayout();
             // 
             // txtID
@@ -77,13 +75,13 @@
             this.label1.TabIndex = 101;
             this.label1.Text = "* Digite 0 em ID para listar todos";
             // 
-            // dtgAlunos
+            // dtgEditoras
             // 
-            this.dtgAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgAlunos.Location = new System.Drawing.Point(13, 142);
-            this.dtgAlunos.Name = "dtgAlunos";
-            this.dtgAlunos.Size = new System.Drawing.Size(759, 298);
-            this.dtgAlunos.TabIndex = 100;
+            this.dtgEditoras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgEditoras.Location = new System.Drawing.Point(13, 142);
+            this.dtgEditoras.Name = "dtgEditoras";
+            this.dtgEditoras.Size = new System.Drawing.Size(759, 298);
+            this.dtgEditoras.TabIndex = 100;
             // 
             // btnProcurar
             // 
@@ -160,13 +158,6 @@
             this.label9.TabIndex = 96;
             this.label9.Text = "Cidade";
             // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(114, 98);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(221, 20);
-            this.txtCidade.TabIndex = 97;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -183,23 +174,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(345, 20);
             this.txtNome.TabIndex = 95;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(251, 22);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 16);
-            this.label5.TabIndex = 92;
-            this.label5.Text = "CPF";
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(294, 21);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(165, 20);
-            this.txtCPF.TabIndex = 93;
             // 
             // label4
             // 
@@ -276,6 +250,13 @@
             this.cmbPaís.Size = new System.Drawing.Size(345, 21);
             this.cmbPaís.TabIndex = 103;
             // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(114, 98);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(221, 20);
+            this.txtCidade.TabIndex = 97;
+            // 
             // frmConsultaEditoras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,7 +266,7 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtgAlunos);
+            this.Controls.Add(this.dtgEditoras);
             this.Controls.Add(this.btnProcurar);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.cmbUF);
@@ -293,15 +274,13 @@
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancelar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaEditoras";
             this.Text = "CONSULTA DE EDITORAS";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAlunos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEditoras)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,19 +291,17 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgAlunos;
+        private System.Windows.Forms.DataGridView dtgEditoras;
         private System.Windows.Forms.Button btnProcurar;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cmbUF;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cmbPaís;
+        private System.Windows.Forms.TextBox txtCidade;
     }
 }
