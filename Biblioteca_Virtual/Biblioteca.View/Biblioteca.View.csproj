@@ -134,6 +134,21 @@
     <EmbeddedResource Include="CADASTROS\frmCadastroLivro.resx">
       <DependentUpon>frmCadastroLivro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAS\frmConsultaAlunos.resx">
+      <DependentUpon>frmConsultaAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAS\frmConsultaAutores.resx">
+      <DependentUpon>frmConsultaAutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAS\frmConsultaEditoras.resx">
+      <DependentUpon>frmConsultaEditoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAS\frmConsultaGeneros.resx">
+      <DependentUpon>frmConsultaGeneros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAS\frmConsultaLivros.resx">
+      <DependentUpon>frmConsultaLivros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
