@@ -47,6 +47,8 @@
             this.txtBiografia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSite = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtSobreNome = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -223,7 +225,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(102, 117);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(348, 20);
+            this.txtNome.Size = new System.Drawing.Size(286, 20);
             this.txtNome.TabIndex = 31;
             // 
             // label5
@@ -241,7 +243,7 @@
             this.txtBiografia.Location = new System.Drawing.Point(102, 171);
             this.txtBiografia.Multiline = true;
             this.txtBiografia.Name = "txtBiografia";
-            this.txtBiografia.Size = new System.Drawing.Size(605, 222);
+            this.txtBiografia.Size = new System.Drawing.Size(670, 222);
             this.txtBiografia.TabIndex = 34;
             // 
             // label6
@@ -258,14 +260,33 @@
             // 
             this.txtSite.Location = new System.Drawing.Point(102, 421);
             this.txtSite.Name = "txtSite";
-            this.txtSite.Size = new System.Drawing.Size(605, 20);
+            this.txtSite.Size = new System.Drawing.Size(670, 20);
             this.txtSite.TabIndex = 36;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(394, 117);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 16);
+            this.label7.TabIndex = 92;
+            this.label7.Text = "Sobre Nome";
+            // 
+            // txtSobreNome
+            // 
+            this.txtSobreNome.Location = new System.Drawing.Point(495, 116);
+            this.txtSobreNome.Name = "txtSobreNome";
+            this.txtSobreNome.Size = new System.Drawing.Size(277, 20);
+            this.txtSobreNome.TabIndex = 93;
             // 
             // frmCadastroAutor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtSobreNome);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSite);
             this.Controls.Add(this.label5);
@@ -309,5 +330,7 @@
         private System.Windows.Forms.TextBox txtBiografia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtSite;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtSobreNome;
     }
 }
