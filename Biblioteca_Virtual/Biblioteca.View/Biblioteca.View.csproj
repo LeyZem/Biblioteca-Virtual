@@ -174,6 +174,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca.Control\Biblioteca.Control.csproj">
+      <Project>{3b115f0d-7914-4c05-9bf2-10936d0896c3}</Project>
+      <Name>Biblioteca.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BibliotecaVirtual.Model\Biblioteca.Model.csproj">
+      <Project>{17311ee9-9e6d-4a05-abf3-483dfb352a32}</Project>
+      <Name>Biblioteca.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
