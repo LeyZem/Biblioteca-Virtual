@@ -1,0 +1,5 @@
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\bin\Debug\BibliotecaVirtual.Model.dll
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\bin\Debug\BibliotecaVirtual.Model.pdb
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\Biblioteca.Model.csprojResolveAssemblyReference.cache
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\BibliotecaVirtual.Model.dll
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\BibliotecaVirtual.Model.pdb

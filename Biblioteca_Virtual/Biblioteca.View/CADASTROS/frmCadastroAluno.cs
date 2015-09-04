@@ -21,5 +21,11 @@ namespace Biblioteca.View
         {
 
         }
+
+        private void frmCadastroAluno_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((frmPrincipal)this.MdiParent).aLUNOToolStripMenuItem.Enabled = true;
+
+        }
     }
 }

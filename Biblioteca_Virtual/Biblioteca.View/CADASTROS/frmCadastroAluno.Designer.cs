@@ -36,6 +36,7 @@
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.txt_Nome = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnProcurar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -64,7 +65,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dtpNasc = new System.Windows.Forms.DateTimePicker();
-            this.btnProcurar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,6 +170,25 @@
             this.groupBox1.Size = new System.Drawing.Size(526, 42);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
+            // 
+            // btnProcurar
+            // 
+            this.btnProcurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProcurar.BackColor = System.Drawing.Color.Transparent;
+            this.btnProcurar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProcurar.BackgroundImage")));
+            this.btnProcurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProcurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProcurar.FlatAppearance.BorderSize = 0;
+            this.btnProcurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnProcurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnProcurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcurar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnProcurar.Location = new System.Drawing.Point(482, 11);
+            this.btnProcurar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(31, 26);
+            this.btnProcurar.TabIndex = 54;
+            this.btnProcurar.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -443,25 +462,6 @@
             this.dtpNasc.Size = new System.Drawing.Size(112, 20);
             this.dtpNasc.TabIndex = 53;
             // 
-            // btnProcurar
-            // 
-            this.btnProcurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProcurar.BackColor = System.Drawing.Color.Transparent;
-            this.btnProcurar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProcurar.BackgroundImage")));
-            this.btnProcurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProcurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProcurar.FlatAppearance.BorderSize = 0;
-            this.btnProcurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnProcurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnProcurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProcurar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnProcurar.Location = new System.Drawing.Point(482, 11);
-            this.btnProcurar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnProcurar.Name = "btnProcurar";
-            this.btnProcurar.Size = new System.Drawing.Size(31, 26);
-            this.btnProcurar.TabIndex = 54;
-            this.btnProcurar.UseVisualStyleBackColor = false;
-            // 
             // frmCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -501,6 +501,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCadastroAluno";
             this.Text = "CADASTRO DE ALUNO";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCadastroAluno_FormClosed);
             this.Load += new System.EventHandler(this.frmCadastroAluno_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
