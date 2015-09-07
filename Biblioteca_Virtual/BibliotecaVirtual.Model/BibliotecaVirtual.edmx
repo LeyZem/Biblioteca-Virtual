@@ -13,7 +13,7 @@
           <Property Name="NOME" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="SOBRENOME" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="CPF" Type="varchar" MaxLength="11" Nullable="false" />
-          <Property Name="NASC" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NASC" Type="datetime" Nullable="false" />
           <Property Name="ENDERECO" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="BAIRRO" Type="varchar" MaxLength="15" Nullable="false" />
           <Property Name="CIDADE" Type="varchar" MaxLength="15" Nullable="false" />
@@ -28,7 +28,7 @@
           <Key>
             <PropertyRef Name="ID_AUTOR" />
           </Key>
-          <Property Name="ID_AUTOR" Type="int" Nullable="false" />
+          <Property Name="ID_AUTOR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NOME" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="SOBRENOME" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="BIOGRAFIA" Type="varchar" MaxLength="100" Nullable="false" />
@@ -38,7 +38,7 @@
           <Key>
             <PropertyRef Name="ID_EDITORA" />
           </Key>
-          <Property Name="ID_EDITORA" Type="int" Nullable="false" />
+          <Property Name="ID_EDITORA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NOME" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="ENDERECO" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="BAIRRO" Type="varchar" MaxLength="15" Nullable="false" />
@@ -68,7 +68,7 @@
           <Key>
             <PropertyRef Name="ID_GENERO" />
           </Key>
-          <Property Name="ID_GENERO" Type="int" Nullable="false" />
+          <Property Name="ID_GENERO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DESCRICAO" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="ANDAR" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="CORREDOR" Type="varchar" MaxLength="10" Nullable="false" />
@@ -79,7 +79,7 @@
             <PropertyRef Name="ID_LIVRO" />
             <PropertyRef Name="ID_EDITORA" />
           </Key>
-          <Property Name="ID_LIVRO" Type="int" Nullable="false" />
+          <Property Name="ID_LIVRO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_EDITORA" Type="int" Nullable="false" />
           <Property Name="TITULO" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="VOLUME" Type="int" Nullable="false" />
@@ -112,7 +112,7 @@
           <Key>
             <PropertyRef Name="ID_RESERVA" />
           </Key>
-          <Property Name="ID_RESERVA" Type="int" Nullable="false" />
+          <Property Name="ID_RESERVA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DATA_RES" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="ReservaLivro">
@@ -313,7 +313,7 @@
           <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SOBRENOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="CPF" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="NASC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NASC" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="ENDERECO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="BAIRRO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="CIDADE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
@@ -329,7 +329,7 @@
           <Key>
             <PropertyRef Name="ID_AUTOR" />
           </Key>
-          <Property Name="ID_AUTOR" Type="Int32" Nullable="false" />
+          <Property Name="ID_AUTOR" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SOBRENOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="BIOGRAFIA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
@@ -340,7 +340,7 @@
           <Key>
             <PropertyRef Name="ID_EDITORA" />
           </Key>
-          <Property Name="ID_EDITORA" Type="Int32" Nullable="false" />
+          <Property Name="ID_EDITORA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ENDERECO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="BAIRRO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
@@ -373,7 +373,7 @@
           <Key>
             <PropertyRef Name="ID_GENERO" />
           </Key>
-          <Property Name="ID_GENERO" Type="Int32" Nullable="false" />
+          <Property Name="ID_GENERO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DESCRICAO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ANDAR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="CORREDOR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
@@ -385,7 +385,7 @@
             <PropertyRef Name="ID_LIVRO" />
             <PropertyRef Name="ID_EDITORA" />
           </Key>
-          <Property Name="ID_LIVRO" Type="Int32" Nullable="false" />
+          <Property Name="ID_LIVRO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_EDITORA" Type="Int32" Nullable="false" />
           <Property Name="TITULO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="VOLUME" Type="Int32" Nullable="false" />
@@ -403,7 +403,7 @@
           <Key>
             <PropertyRef Name="ID_RESERVA" />
           </Key>
-          <Property Name="ID_RESERVA" Type="Int32" Nullable="false" />
+          <Property Name="ID_RESERVA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DATA_RES" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="LIVRO" Relationship="Self.ReservaLivro" FromRole="RESERVA" ToRole="LIVRO" />
         </EntityType>

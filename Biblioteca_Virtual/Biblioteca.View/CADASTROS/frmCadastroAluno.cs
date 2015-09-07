@@ -32,7 +32,7 @@ namespace Biblioteca.View
 
             oAluno.NOME = txtNome.Text;
             oAluno.SOBRENOME = txtSobreNome.Text;
-            oAluno.NASC = dtpNasc.Value.ToString();
+            oAluno.NASC = dtpNasc.Value;
             oAluno.CPF = txtCPF.Text;
             oAluno.ENDERECO = txtEnd.Text;
             oAluno.BAIRRO = txtBairro.Text;
