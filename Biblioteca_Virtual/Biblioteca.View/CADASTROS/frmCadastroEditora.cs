@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Biblioteca.Model;
+using Biblioteca.Controller;
 
 namespace Biblioteca.View
 {
@@ -20,6 +22,11 @@ namespace Biblioteca.View
         private void frmCadastroEditora_FormClosed(object sender, FormClosedEventArgs e)
         {
             ((frmPrincipal)this.MdiParent).eDITORAToolStripMenuItem.Enabled = true;
+        }
+
+        private void frmCadastroEditora_Load(object sender, EventArgs e)
+        {
+            cmbPais.DataSource = ListaPais.ListaPaises();
         }
     }
 }

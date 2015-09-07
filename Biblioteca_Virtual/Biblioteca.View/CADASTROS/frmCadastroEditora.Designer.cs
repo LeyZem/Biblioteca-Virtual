@@ -59,7 +59,7 @@
             this.txtEnd = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.cmbPais = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -218,6 +218,7 @@
             // 
             // cmbUF
             // 
+            this.cmbUF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUF.FormattingEnabled = true;
             this.cmbUF.Items.AddRange(new object[] {
             "AC",
@@ -406,18 +407,19 @@
             this.txtID.Size = new System.Drawing.Size(101, 20);
             this.txtID.TabIndex = 50;
             // 
-            // label4
+            // label16
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(466, 159);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 16);
-            this.label4.TabIndex = 74;
-            this.label4.Text = "País";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(463, 159);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(39, 16);
+            this.label16.TabIndex = 77;
+            this.label16.Text = "País";
             // 
             // cmbPais
             // 
+            this.cmbPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPais.FormattingEnabled = true;
             this.cmbPais.Items.AddRange(new object[] {
             "AC",
@@ -449,16 +451,16 @@
             "TO"});
             this.cmbPais.Location = new System.Drawing.Point(514, 155);
             this.cmbPais.Name = "cmbPais";
-            this.cmbPais.Size = new System.Drawing.Size(228, 21);
-            this.cmbPais.TabIndex = 75;
+            this.cmbPais.Size = new System.Drawing.Size(145, 21);
+            this.cmbPais.TabIndex = 76;
             // 
             // frmCadastroEditora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.cmbPais);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.cmbUF);
             this.Controls.Add(this.label13);
@@ -488,6 +490,7 @@
             this.Name = "frmCadastroEditora";
             this.Text = "CADASTRO DE EDITORA";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCadastroEditora_FormClosed);
+            this.Load += new System.EventHandler(this.frmCadastroEditora_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -527,7 +530,7 @@
         private System.Windows.Forms.TextBox txtEnd;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbPais;
     }
 }
