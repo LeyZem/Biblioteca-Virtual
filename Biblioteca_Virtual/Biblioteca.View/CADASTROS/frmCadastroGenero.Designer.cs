@@ -390,7 +390,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCadastroGenero";
             this.Text = "CADASTRO DE GÊNERO";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCadastroGenero_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

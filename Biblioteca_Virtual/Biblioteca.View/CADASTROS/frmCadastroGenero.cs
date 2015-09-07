@@ -16,11 +16,5 @@ namespace Biblioteca.View
         {
             InitializeComponent();
         }
-
-        private void frmCadastroGenero_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            ((frmPrincipal)this.MdiParent).gENEROToolStripMenuItem.Enabled = true;
-
-        }
     }
 }

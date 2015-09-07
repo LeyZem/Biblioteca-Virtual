@@ -60,10 +60,11 @@ namespace Biblioteca.View
 
         private void aLUNOToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            aLUNOToolStripMenuItem.Enabled = false;
+            aLUNOSToolStripMenuItem.Enabled = false;
             frmCadastroAluno frm = new frmCadastroAluno();
             frm.MdiParent = this;
             frm.Show();
+
         }
 
         private void aUTORToolStripMenuItem_Click(object sender, EventArgs e)
@@ -96,6 +97,11 @@ namespace Biblioteca.View
             frmCadastroLivro frm = new frmCadastroLivro();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

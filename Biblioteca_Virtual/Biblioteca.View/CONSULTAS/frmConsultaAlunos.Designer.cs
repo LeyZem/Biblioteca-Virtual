@@ -272,7 +272,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaAlunos";
             this.Text = "CONSULTA DE ALUNOS";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmConsultaAlunos_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dtgAlunos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

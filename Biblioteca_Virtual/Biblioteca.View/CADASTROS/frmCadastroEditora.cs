@@ -17,10 +17,6 @@ namespace Biblioteca.View
             InitializeComponent();
         }
 
-        private void frmCadastroEditora_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            ((frmPrincipal)this.MdiParent).eDITORAToolStripMenuItem.Enabled = true;
-
-        }
+       
     }
 }

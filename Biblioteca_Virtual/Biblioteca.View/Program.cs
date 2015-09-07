@@ -16,7 +16,7 @@ namespace Biblioteca.View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastroAluno());
+            Application.Run(new frmPrincipal());
         }
     }
 }

@@ -181,15 +181,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ProjectReference Include="..\Biblioteca.Controller\Biblioteca.Controller.csproj">
       <Project>{7a88e346-9080-4022-a07f-6c8d9af7f3fd}</Project>
       <Name>Biblioteca.Controller</Name>
-=======
-    <ProjectReference Include="..\Biblioteca.Control\Biblioteca.Control.csproj">
-      <Project>{3b115f0d-7914-4c05-9bf2-10936d0896c3}</Project>
-      <Name>Biblioteca.Control</Name>
->>>>>>> origin/master
     </ProjectReference>
     <ProjectReference Include="..\BibliotecaVirtual.Model\Biblioteca.Model.csproj">
       <Project>{17311ee9-9e6d-4a05-abf3-483dfb352a32}</Project>

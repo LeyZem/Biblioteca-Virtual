@@ -309,7 +309,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaGeneros";
             this.Text = "CONSULTA DE GÊNEROS";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmConsultaGeneros_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dtgGeneros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

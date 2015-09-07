@@ -201,7 +201,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaAutores";
             this.Text = "CONSULTA DE AUTORES";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmConsultaAutores_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dtgAutores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

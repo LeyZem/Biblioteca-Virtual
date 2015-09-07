@@ -676,7 +676,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCadastroLivro";
             this.Text = "CADASTRO DE LIVRO";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCadastroLivro_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

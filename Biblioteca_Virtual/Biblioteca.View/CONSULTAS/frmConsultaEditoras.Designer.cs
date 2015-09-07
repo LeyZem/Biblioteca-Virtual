@@ -280,7 +280,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaEditoras";
             this.Text = "CONSULTA DE EDITORAS";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmConsultaEditoras_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dtgEditoras)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

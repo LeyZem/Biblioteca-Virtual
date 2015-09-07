@@ -303,7 +303,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCadastroAutor";
             this.Text = "CADASTRO DE AUTOR";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCadastroAutor_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
