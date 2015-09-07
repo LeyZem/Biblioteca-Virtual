@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\bin\Debug\EntityFramework.dll
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\bin\Debug\EntityFramework.xml
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\bin\Debug\Biblioteca.Model.dll.config
@@ -6,3 +7,10 @@ C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\Biblioteca.Model.dll
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\Biblioteca.Model.pdb
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\Biblioteca.Model.csprojResolveAssemblyReference.cache
+=======
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\bin\Debug\BibliotecaVirtual.Model.dll
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\bin\Debug\BibliotecaVirtual.Model.pdb
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\Biblioteca.Model.csprojResolveAssemblyReference.cache
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\BibliotecaVirtual.Model.dll
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\BibliotecaVirtual.Model\obj\Debug\BibliotecaVirtual.Model.pdb
+>>>>>>> origin/master

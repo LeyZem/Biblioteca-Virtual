@@ -487,6 +487,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCadastroEditora";
             this.Text = "CADASTRO DE EDITORA";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCadastroEditora_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

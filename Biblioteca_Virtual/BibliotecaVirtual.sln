@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.View", "Bibliote
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Model", "BibliotecaVirtual.Model\Biblioteca.Model.csproj", "{17311EE9-9E6D-4A05-ABF3-483DFB352A32}"
 EndProject
+<<<<<<< HEAD:Biblioteca_Virtual/BibliotecaVirtual.sln
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Controller", "Biblioteca.Controller\Biblioteca.Controller.csproj", "{7A88E346-9080-4022-A07F-6C8D9AF7F3FD}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Control", "Biblioteca.Control\Biblioteca.Control.csproj", "{3B115F0D-7914-4C05-9BF2-10936D0896C3}"
+>>>>>>> origin/master:Biblioteca_Virtual/Biblioteca_Virtual.sln
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,17 @@ Global
 		{17311EE9-9E6D-4A05-ABF3-483DFB352A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17311EE9-9E6D-4A05-ABF3-483DFB352A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17311EE9-9E6D-4A05-ABF3-483DFB352A32}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD:Biblioteca_Virtual/BibliotecaVirtual.sln
 		{7A88E346-9080-4022-A07F-6C8D9AF7F3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A88E346-9080-4022-A07F-6C8D9AF7F3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A88E346-9080-4022-A07F-6C8D9AF7F3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A88E346-9080-4022-A07F-6C8D9AF7F3FD}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{3B115F0D-7914-4C05-9BF2-10936D0896C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B115F0D-7914-4C05-9BF2-10936D0896C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B115F0D-7914-4C05-9BF2-10936D0896C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B115F0D-7914-4C05-9BF2-10936D0896C3}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> origin/master:Biblioteca_Virtual/Biblioteca_Virtual.sln
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

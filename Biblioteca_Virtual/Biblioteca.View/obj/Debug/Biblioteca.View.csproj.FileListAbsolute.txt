@@ -1,4 +1,5 @@
 E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.exe.config
+<<<<<<< HEAD
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.exe.config
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.exe
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.pdb
@@ -26,3 +27,27 @@ C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.Model.dll
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.Controller.pdb
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.Model.pdb
+=======
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.exe
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.pdb
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.Control.dll
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\BibliotecaVirtual.Model.dll
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.Control.pdb
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\BibliotecaVirtual.Model.pdb
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.csprojResolveAssemblyReference.cache
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmCadastroAluno.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmCadastroAutor.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmCadastroEditora.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmCadastroGenero.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmCadastroLivro.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmConsultaAlunos.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmConsultaAutores.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmConsultaEditoras.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmConsultaGeneros.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmConsultaLivros.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmPrincipal.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.Properties.Resources.resources
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.csproj.GenerateResource.Cache
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.exe
+E:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.pdb
+>>>>>>> origin/master

@@ -380,6 +380,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaLivros";
             this.Text = "CONSULTA DE LIVROS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmConsultaLivros_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dtgLivros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

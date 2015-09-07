@@ -17,6 +17,10 @@ namespace Biblioteca.View
             InitializeComponent();
         }
 
-   
+        private void frmConsultaGeneros_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((frmPrincipal)this.MdiParent).gÊNEROSToolStripMenuItem.Enabled = true;
+
+        }
     }
 }

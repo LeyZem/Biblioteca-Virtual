@@ -16,5 +16,11 @@ namespace Biblioteca.View
         {
             InitializeComponent();
         }
+
+        private void frmCadastroAutor_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((frmPrincipal)this.MdiParent).aUTORToolStripMenuItem.Enabled = true;
+
+        }
     }
 }
