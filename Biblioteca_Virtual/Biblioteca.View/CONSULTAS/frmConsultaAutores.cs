@@ -17,6 +17,9 @@ namespace Biblioteca.View
             InitializeComponent();
         }
 
-      
+        private void frmConsultaAutores_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((frmPrincipal)this.MdiParent).aUTORESToolStripMenuItem.Enabled = true;
+        }
     }
 }

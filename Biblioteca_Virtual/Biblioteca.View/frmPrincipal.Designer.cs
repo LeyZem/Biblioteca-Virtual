@@ -169,19 +169,19 @@
             // rESERVAToolStripMenuItem
             // 
             this.rESERVAToolStripMenuItem.Name = "rESERVAToolStripMenuItem";
-            this.rESERVAToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.rESERVAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rESERVAToolStripMenuItem.Text = "RESERVA";
             // 
             // eMPRESTIMOToolStripMenuItem
             // 
             this.eMPRESTIMOToolStripMenuItem.Name = "eMPRESTIMOToolStripMenuItem";
-            this.eMPRESTIMOToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.eMPRESTIMOToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eMPRESTIMOToolStripMenuItem.Text = "EMPRESTIMO";
             // 
             // dEVOLUÇÃOToolStripMenuItem
             // 
             this.dEVOLUÇÃOToolStripMenuItem.Name = "dEVOLUÇÃOToolStripMenuItem";
-            this.dEVOLUÇÃOToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.dEVOLUÇÃOToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.dEVOLUÇÃOToolStripMenuItem.Text = "DEVOLUÇÃO";
             // 
             // sOBREToolStripMenuItem
@@ -211,22 +211,22 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tstConsultas;
-        private System.Windows.Forms.ToolStripMenuItem aLUNOSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aUTORESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eDITORASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gÊNEROSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lIVROSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cADASTROSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aLUNOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aUTORToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eDITORAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gENEROToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lIVROToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mOVIMENTAÇÃOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rESERVAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eMPRESTIMOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dEVOLUÇÃOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sOBREToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem tstConsultas;
+        public System.Windows.Forms.ToolStripMenuItem cADASTROSToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem mOVIMENTAÇÃOToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem sOBREToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem aLUNOSToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem aUTORESToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem eDITORASToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem gÊNEROSToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem lIVROSToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem aLUNOToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem aUTORToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem eDITORAToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem gENEROToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem lIVROToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem rESERVAToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem eMPRESTIMOToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem dEVOLUÇÃOToolStripMenuItem;
     }
 }

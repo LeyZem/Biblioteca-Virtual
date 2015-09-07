@@ -127,6 +127,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(36, 34);
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnDeletar
             // 
@@ -554,6 +555,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCadastroAluno";
             this.Text = "CADASTRO DE ALUNO";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCadastroAluno_FormClosed);
             this.Load += new System.EventHandler(this.frmCadastroAluno_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

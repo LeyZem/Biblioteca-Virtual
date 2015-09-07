@@ -17,6 +17,9 @@ namespace Biblioteca.View
             InitializeComponent();
         }
 
-      
+        private void frmConsultaLivros_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((frmPrincipal)this.MdiParent).lIVROSToolStripMenuItem.Enabled = true;
+        }
     }
 }

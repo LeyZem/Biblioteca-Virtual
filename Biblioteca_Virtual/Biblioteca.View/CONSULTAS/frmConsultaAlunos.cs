@@ -17,6 +17,9 @@ namespace Biblioteca.View
             InitializeComponent();
         }
 
-        
+        private void frmConsultaAlunos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((frmPrincipal)this.MdiParent).aLUNOSToolStripMenuItem.Enabled = true;
+        }
     }
 }

@@ -60,7 +60,7 @@ namespace Biblioteca.View
 
         private void aLUNOToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            aLUNOSToolStripMenuItem.Enabled = false;
+            aLUNOToolStripMenuItem.Enabled = false;
             frmCadastroAluno frm = new frmCadastroAluno();
             frm.MdiParent = this;
             frm.Show();
