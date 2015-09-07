@@ -36,6 +36,7 @@
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.txt_Nome = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnProcurar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -64,7 +65,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dtpNasc = new System.Windows.Forms.DateTimePicker();
-            this.btnProcurar = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cmbPais = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +88,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(34, 34);
             this.btnSalvar.TabIndex = 18;
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnNovo
             // 
@@ -170,6 +173,25 @@
             this.groupBox1.Size = new System.Drawing.Size(526, 42);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
+            // 
+            // btnProcurar
+            // 
+            this.btnProcurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProcurar.BackColor = System.Drawing.Color.Transparent;
+            this.btnProcurar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProcurar.BackgroundImage")));
+            this.btnProcurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProcurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProcurar.FlatAppearance.BorderSize = 0;
+            this.btnProcurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnProcurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnProcurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcurar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnProcurar.Location = new System.Drawing.Point(482, 11);
+            this.btnProcurar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(31, 26);
+            this.btnProcurar.TabIndex = 54;
+            this.btnProcurar.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -381,6 +403,7 @@
             // 
             // cmbUF
             // 
+            this.cmbUF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUF.FormattingEnabled = true;
             this.cmbUF.Items.AddRange(new object[] {
             "AC",
@@ -443,30 +466,60 @@
             this.dtpNasc.Size = new System.Drawing.Size(112, 20);
             this.dtpNasc.TabIndex = 53;
             // 
-            // btnProcurar
+            // label16
             // 
-            this.btnProcurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProcurar.BackColor = System.Drawing.Color.Transparent;
-            this.btnProcurar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProcurar.BackgroundImage")));
-            this.btnProcurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProcurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProcurar.FlatAppearance.BorderSize = 0;
-            this.btnProcurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnProcurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnProcurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProcurar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnProcurar.Location = new System.Drawing.Point(482, 11);
-            this.btnProcurar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnProcurar.Name = "btnProcurar";
-            this.btnProcurar.Size = new System.Drawing.Size(31, 26);
-            this.btnProcurar.TabIndex = 54;
-            this.btnProcurar.UseVisualStyleBackColor = false;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(429, 254);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(42, 16);
+            this.label16.TabIndex = 55;
+            this.label16.Text = "PAIS";
+            // 
+            // cmbPais
+            // 
+            this.cmbPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPais.FormattingEnabled = true;
+            this.cmbPais.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP ",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC\t ",
+            "SP\t ",
+            "SE\t ",
+            "TO"});
+            this.cmbPais.Location = new System.Drawing.Point(480, 253);
+            this.cmbPais.Name = "cmbPais";
+            this.cmbPais.Size = new System.Drawing.Size(145, 21);
+            this.cmbPais.TabIndex = 54;
             // 
             // frmCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.cmbPais);
             this.Controls.Add(this.dtpNasc);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -547,5 +600,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker dtpNasc;
         private System.Windows.Forms.Button btnProcurar;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox cmbPais;
     }
 }

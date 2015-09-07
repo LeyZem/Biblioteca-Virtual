@@ -1,0 +1,10 @@
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\Biblioteca.Controller.dll.config
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\Biblioteca.Controller.dll
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\Biblioteca.Controller.pdb
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\Biblioteca.Model.dll
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\EntityFramework.dll
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\Biblioteca.Model.pdb
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\EntityFramework.xml
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\obj\Debug\Biblioteca.Controller.csprojResolveAssemblyReference.cache
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\obj\Debug\Biblioteca.Controller.dll
+C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\obj\Debug\Biblioteca.Controller.pdb

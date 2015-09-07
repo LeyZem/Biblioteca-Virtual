@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,64 +51,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CONSULTAS\frmConsultaAlunos.cs">
+    <Compile Include="Consultas\frmConsultaAlunos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaAlunos.Designer.cs">
+    <Compile Include="Consultas\frmConsultaAlunos.Designer.cs">
       <DependentUpon>frmConsultaAlunos.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaAutores.cs">
+    <Compile Include="Consultas\frmConsultaAutores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaAutores.Designer.cs">
+    <Compile Include="Consultas\frmConsultaAutores.Designer.cs">
       <DependentUpon>frmConsultaAutores.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaEditoras.cs">
+    <Compile Include="Consultas\frmConsultaEditoras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaEditoras.Designer.cs">
+    <Compile Include="Consultas\frmConsultaEditoras.Designer.cs">
       <DependentUpon>frmConsultaEditoras.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaGeneros.cs">
+    <Compile Include="Consultas\frmConsultaGeneros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaGeneros.Designer.cs">
+    <Compile Include="Consultas\frmConsultaGeneros.Designer.cs">
       <DependentUpon>frmConsultaGeneros.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaLivros.cs">
+    <Compile Include="Consultas\frmConsultaLivros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONSULTAS\frmConsultaLivros.Designer.cs">
+    <Compile Include="Consultas\frmConsultaLivros.Designer.cs">
       <DependentUpon>frmConsultaLivros.cs</DependentUpon>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroAluno.cs">
+    <Compile Include="Cadastros\frmCadastroAluno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroAluno.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroAluno.Designer.cs">
       <DependentUpon>frmCadastroAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroAutor.cs">
+    <Compile Include="Cadastros\frmCadastroAutor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroAutor.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroAutor.Designer.cs">
       <DependentUpon>frmCadastroAutor.cs</DependentUpon>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroEditora.cs">
+    <Compile Include="Cadastros\frmCadastroEditora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroEditora.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroEditora.Designer.cs">
       <DependentUpon>frmCadastroEditora.cs</DependentUpon>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroGenero.cs">
+    <Compile Include="Cadastros\frmCadastroGenero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroGenero.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroGenero.Designer.cs">
       <DependentUpon>frmCadastroGenero.cs</DependentUpon>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroLivro.cs">
+    <Compile Include="Cadastros\frmCadastroLivro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CADASTROS\frmCadastroLivro.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroLivro.Designer.cs">
       <DependentUpon>frmCadastroLivro.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
@@ -119,34 +125,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CADASTROS\frmCadastroAluno.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroAluno.resx">
       <DependentUpon>frmCadastroAluno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CADASTROS\frmCadastroAutor.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroAutor.resx">
       <DependentUpon>frmCadastroAutor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CADASTROS\frmCadastroEditora.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroEditora.resx">
       <DependentUpon>frmCadastroEditora.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CADASTROS\frmCadastroGenero.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroGenero.resx">
       <DependentUpon>frmCadastroGenero.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CADASTROS\frmCadastroLivro.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroLivro.resx">
       <DependentUpon>frmCadastroLivro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONSULTAS\frmConsultaAlunos.resx">
+    <EmbeddedResource Include="Consultas\frmConsultaAlunos.resx">
       <DependentUpon>frmConsultaAlunos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONSULTAS\frmConsultaAutores.resx">
+    <EmbeddedResource Include="Consultas\frmConsultaAutores.resx">
       <DependentUpon>frmConsultaAutores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONSULTAS\frmConsultaEditoras.resx">
+    <EmbeddedResource Include="Consultas\frmConsultaEditoras.resx">
       <DependentUpon>frmConsultaEditoras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONSULTAS\frmConsultaGeneros.resx">
+    <EmbeddedResource Include="Consultas\frmConsultaGeneros.resx">
       <DependentUpon>frmConsultaGeneros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONSULTAS\frmConsultaLivros.resx">
+    <EmbeddedResource Include="Consultas\frmConsultaLivros.resx">
       <DependentUpon>frmConsultaLivros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
@@ -173,6 +179,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca.Controller\Biblioteca.Controller.csproj">
+      <Project>{7a88e346-9080-4022-a07f-6c8d9af7f3fd}</Project>
+      <Name>Biblioteca.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BibliotecaVirtual.Model\Biblioteca.Model.csproj">
+      <Project>{17311ee9-9e6d-4a05-abf3-483dfb352a32}</Project>
+      <Name>Biblioteca.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
