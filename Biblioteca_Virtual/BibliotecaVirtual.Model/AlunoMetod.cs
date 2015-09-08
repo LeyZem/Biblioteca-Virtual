@@ -38,23 +38,6 @@ namespace Biblioteca.Model
             {
                 try
                 {
-                    /*ConsultaUsuario.NOME = pAluno.NOME;
-                    ConsultaUsuario.SOBRENOME = pAluno.SOBRENOME;
-                    ConsultaUsuario.NASC = pAluno.NASC;
-                    ConsultaUsuario.CPF = pAluno.CPF;
-                    ConsultaUsuario.ENDERECO = pAluno.ENDERECO;
-                    ConsultaUsuario.BAIRRO = pAluno.BAIRRO;
-                    ConsultaUsuario.CIDADE = pAluno.CIDADE;
-                    ConsultaUsuario.UF = pAluno.UF;
-                    ConsultaUsuario.PAIS = pAluno.PAIS;
-                    ConsultaUsuario.CEP = pAluno.CEP;
-                    ConsultaUsuario.TEL_RES = pAluno.TEL_RES;
-                    ConsultaUsuario.TEL_CEL = pAluno.TEL_CEL;
-                    ConsultaUsuario.EMAIL = pAluno.EMAIL;
-
-                    oDB.SaveChanges();
-                    oDB.Dispose();*/
-
                     pAluno.NOME = ConsultaUsuario.NOME;
                     pAluno.SOBRENOME = ConsultaUsuario.SOBRENOME;
                     pAluno.NASC = ConsultaUsuario.NASC;
@@ -86,7 +69,7 @@ namespace Biblioteca.Model
                                    where cu.CPF == pAluno.CPF
                                    select cu).SingleOrDefault();
 
-            //Se a consulta retorna NULA ele cadastra o usuário    
+            //Se a consulta não retorna NULA ele atualiza o usuário    
             if (ConsultaUsuario != null)
             {
                 try
@@ -132,6 +115,43 @@ namespace Biblioteca.Model
             oDB.Dispose();
 
             return true;
+        }
+
+        public static ALUNO Selecionar(int IDAluno)
+        {
+            var oDB = new BibliotecaVirtualEntities();
+
+            //String de Seleção do usuário
+            var ConsultaUsuario = (from cu in oDB.ALUNO
+                                   where cu.ID_ALUNO == IDAluno
+                                   select cu).SingleOrDefault();
+
+            if (ConsultaUsuario == null)
+            {
+                return null;
+            }
+            //Se a consulta retorna um usuário, atualiza ele com os dados da tela    
+            else
+            {
+
+                ALUNO oAluno = new ALUNO();
+
+                oAluno.NOME = ConsultaUsuario.NOME;
+                oAluno.SOBRENOME = ConsultaUsuario.SOBRENOME;
+                oAluno.NASC = ConsultaUsuario.NASC;
+                oAluno.CPF = ConsultaUsuario.CPF;
+                oAluno.ENDERECO = ConsultaUsuario.ENDERECO;
+                oAluno.BAIRRO = ConsultaUsuario.BAIRRO;
+                oAluno.CIDADE = ConsultaUsuario.CIDADE;
+                oAluno.UF = ConsultaUsuario.UF;
+                oAluno.PAIS = ConsultaUsuario.PAIS;
+                oAluno.CEP = ConsultaUsuario.CEP;
+                oAluno.TEL_RES = ConsultaUsuario.TEL_RES;
+                oAluno.TEL_CEL = ConsultaUsuario.TEL_CEL;
+                oAluno.EMAIL = ConsultaUsuario.EMAIL;
+
+                return oAluno;
+            }
         }
     }
 }

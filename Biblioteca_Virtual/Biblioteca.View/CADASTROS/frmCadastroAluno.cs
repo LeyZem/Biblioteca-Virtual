@@ -160,5 +160,38 @@ namespace Biblioteca.View
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            int var = Convert.ToInt32(txt_ID.Text);
+            if (AlunoMetod.Selecionar(var)!= null)
+            {
+                ALUNO oAluno = AlunoMetod.Selecionar(var);
+
+                txtNome.Text = oAluno.NOME;
+                txtSobreNome.Text = oAluno.SOBRENOME;
+                dtpNasc.Value = oAluno.NASC;
+                txtCPF.Text = oAluno.CPF;
+                txtEnd.Text = oAluno.ENDERECO;
+                txtBairro.Text = oAluno.BAIRRO;
+                txtCidade.Text = oAluno.CIDADE;
+                cmbUF.SelectedItem = oAluno.UF;
+                cmbPais.SelectedItem = oAluno.PAIS;
+                txtCEP.Text = oAluno.CEP;
+                txtTelRes.Text = oAluno.TEL_RES;
+                txtTelCel.Text = oAluno.TEL_CEL;
+                txtEmail.Text = oAluno.EMAIL;
+                txtID.Text = oAluno.ID_ALUNO.ToString();
+
+                txtNome.Enabled = false;
+                txtSobreNome.Enabled = false;
+                txtCPF.Enabled = false;
+                dtpNasc.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Aluno não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }           
+        }
     }
 }

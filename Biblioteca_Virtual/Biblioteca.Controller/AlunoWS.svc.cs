@@ -33,5 +33,10 @@ namespace Biblioteca.Controller
                 return false;
             }
         }
+
+        public static void Selecionar(int IDAluno)
+        {
+            AlunoMetod.Selecionar(IDAluno);
+        }
     }
 }

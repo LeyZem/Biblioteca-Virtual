@@ -198,6 +198,7 @@
             this.btnProcurar.Size = new System.Drawing.Size(31, 26);
             this.btnProcurar.TabIndex = 54;
             this.btnProcurar.UseVisualStyleBackColor = false;
+            this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
             // label2
             // 
