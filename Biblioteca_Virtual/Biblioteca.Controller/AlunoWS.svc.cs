@@ -10,9 +10,28 @@ namespace Biblioteca.Controller
 {
     public class AlunoWS
     {
-        public static void Cadastrar(ALUNO oAluno)
+        public static bool Cadastrar(ALUNO oAluno)
         {
-            AlunoMetod.Cadastrar(oAluno);
+            if(AlunoMetod.Cadastrar(oAluno))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool Alterar(ALUNO oAluno)
+        {
+            if (AlunoMetod.Alterar(oAluno))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
