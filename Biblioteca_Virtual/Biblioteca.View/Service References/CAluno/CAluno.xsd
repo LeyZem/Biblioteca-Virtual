@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Biblioteca.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Biblioteca.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ALUNO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BAIRRO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CIDADE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDERECO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Emprestimo" nillable="true" type="tns:ArrayOfEmprestimo" />
+      <xs:element minOccurs="0" name="ID_ALUNO" type="xs:int" />
+      <xs:element minOccurs="0" name="NASC" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAIS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SOBRENOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL_CEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL_RES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UF" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ALUNO" nillable="true" type="tns:ALUNO" />
+  <xs:complexType name="ArrayOfEmprestimo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Emprestimo" nillable="true" type="tns:Emprestimo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmprestimo" nillable="true" type="tns:ArrayOfEmprestimo" />
+  <xs:complexType name="Emprestimo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ALUNO" nillable="true" type="tns:ALUNO" />
+      <xs:element minOccurs="0" name="DATA_DEVOL" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DATA_EMP" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_ALUNO" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_EDITORA" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_EMPRESTIMO" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_LIVRO" type="xs:int" />
+      <xs:element minOccurs="0" name="LIVRO" nillable="true" type="tns:LIVRO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Emprestimo" nillable="true" type="tns:Emprestimo" />
+  <xs:complexType name="LIVRO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AUTOR" nillable="true" type="tns:ArrayOfAUTOR" />
+      <xs:element minOccurs="0" name="DATA_PUBLIC" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EDITORA" nillable="true" type="tns:EDITORA" />
+      <xs:element minOccurs="0" name="Emprestimo" nillable="true" type="tns:ArrayOfEmprestimo" />
+      <xs:element minOccurs="0" name="GENERO" nillable="true" type="tns:ArrayOfGENERO" />
+      <xs:element minOccurs="0" name="ID_EDITORA" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_LIVRO" type="xs:int" />
+      <xs:element minOccurs="0" name="QTD_DISP_EMPR" type="xs:int" />
+      <xs:element minOccurs="0" name="QTD_EXMPLARES" type="xs:int" />
+      <xs:element minOccurs="0" name="RESERVA" nillable="true" type="tns:ArrayOfRESERVA" />
+      <xs:element minOccurs="0" name="SUMARIO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TITULO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VOLUME" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LIVRO" nillable="true" type="tns:LIVRO" />
+  <xs:complexType name="ArrayOfAUTOR">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AUTOR" nillable="true" type="tns:AUTOR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAUTOR" nillable="true" type="tns:ArrayOfAUTOR" />
+  <xs:complexType name="AUTOR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BIOGRAFIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_AUTOR" type="xs:int" />
+      <xs:element minOccurs="0" name="LIVRO" nillable="true" type="tns:ArrayOfLIVRO" />
+      <xs:element minOccurs="0" name="NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SITE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SOBRENOME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AUTOR" nillable="true" type="tns:AUTOR" />
+  <xs:complexType name="ArrayOfLIVRO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LIVRO" nillable="true" type="tns:LIVRO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLIVRO" nillable="true" type="tns:ArrayOfLIVRO" />
+  <xs:complexType name="EDITORA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BAIRRO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CIDADE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ENDERECO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_EDITORA" type="xs:int" />
+      <xs:element minOccurs="0" name="LIVRO" nillable="true" type="tns:ArrayOfLIVRO" />
+      <xs:element minOccurs="0" name="NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAIS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UF" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EDITORA" nillable="true" type="tns:EDITORA" />
+  <xs:complexType name="ArrayOfGENERO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GENERO" nillable="true" type="tns:GENERO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGENERO" nillable="true" type="tns:ArrayOfGENERO" />
+  <xs:complexType name="GENERO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ANDAR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CORREDOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRICAO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_GENERO" type="xs:int" />
+      <xs:element minOccurs="0" name="LIVRO" nillable="true" type="tns:ArrayOfLIVRO" />
+      <xs:element minOccurs="0" name="PRETELEIRA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GENERO" nillable="true" type="tns:GENERO" />
+  <xs:complexType name="ArrayOfRESERVA">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RESERVA" nillable="true" type="tns:RESERVA" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRESERVA" nillable="true" type="tns:ArrayOfRESERVA" />
+  <xs:complexType name="RESERVA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DATA_RES" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_RESERVA" type="xs:int" />
+      <xs:element minOccurs="0" name="LIVRO" nillable="true" type="tns:ArrayOfLIVRO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RESERVA" nillable="true" type="tns:RESERVA" />
+</xs:schema>

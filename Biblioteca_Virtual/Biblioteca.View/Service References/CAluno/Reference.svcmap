@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="93feeea5-f66f-4957-b153-8e2c26bb5353" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10111/CAluno.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CAluno.xsd" MetadataType="Schema" ID="c4d5fec5-86f2-4206-918f-a5de1ddaa95e" SourceId="1" SourceUrl="http://localhost:10111/CAluno.svc?xsd=xsd2" />
+    <MetadataFile FileName="CAluno1.xsd" MetadataType="Schema" ID="a6269ec3-41a2-4426-ac66-271481b3a8d9" SourceId="1" SourceUrl="http://localhost:10111/CAluno.svc?xsd=xsd0" />
+    <MetadataFile FileName="CAluno2.xsd" MetadataType="Schema" ID="22cc9679-0399-4c3f-b393-3060f6fb5a23" SourceId="1" SourceUrl="http://localhost:10111/CAluno.svc?xsd=xsd1" />
+    <MetadataFile FileName="CAluno.wsdl" MetadataType="Wsdl" ID="54f6e234-f897-43e1-be81-c41481b043ce" SourceId="1" SourceUrl="http://localhost:10111/CAluno.svc?wsdl" />
+    <MetadataFile FileName="CAluno.disco" MetadataType="Disco" ID="1fccd575-b89d-448b-b097-c4f4b03d8d61" SourceId="1" SourceUrl="http://localhost:10111/CAluno.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

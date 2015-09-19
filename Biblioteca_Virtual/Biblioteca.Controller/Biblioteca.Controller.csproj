@@ -62,13 +62,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AlunoWS.svc" />
+    <Content Include="CAluno.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlunoWS.svc.cs">
-      <DependentUpon>AlunoWS.svc</DependentUpon>
+    <Compile Include="CAluno.svc.cs">
+      <DependentUpon>CAluno.svc</DependentUpon>
     </Compile>
+    <Compile Include="ICAluno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -44,9 +44,12 @@ namespace Biblioteca.View
             oAluno.TEL_CEL = txtTelCel.Text;
             oAluno.EMAIL = txtEmail.Text;
 
+            CAluno.CAlunoClient oProxy = new CAluno.CAlunoClient();
+            oProxy.Open();
+
             try
             {
-                if (AlunoWS.Cadastrar(oAluno))
+                if (oProxy.Cadastrar(oAluno))
                 {
                     MessageBox.Show("Cadastro realizado com sucesso!", "Confirmação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimpaCampos();
@@ -142,9 +145,12 @@ namespace Biblioteca.View
             oAluno.TEL_CEL = txtTelCel.Text;
             oAluno.EMAIL = txtEmail.Text;
 
+            CAluno.CAlunoClient oProxy = new CAluno.CAlunoClient();
+            oProxy.Open();
+
             try
             {
-                if (AlunoWS.Alterar(oAluno))
+                if (oProxy.Alterar(oAluno))
                 {
                     MessageBox.Show("Alteração realizada com sucesso!", "Confirmação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimpaCampos();
@@ -163,8 +169,12 @@ namespace Biblioteca.View
 
         private void btnProcurar_Click(object sender, EventArgs e)
         {
+           
             int var = Convert.ToInt32(txt_ID.Text);
-            if (AlunoMetod.Selecionar(var)!= null)
+            CAluno.CAlunoClient oProxy = new CAluno.CAlunoClient();
+            oProxy.Open();
+
+            if (oProxy.Selecionar(var)!= null)
             {
                 ALUNO oAluno = AlunoMetod.Selecionar(var);
 

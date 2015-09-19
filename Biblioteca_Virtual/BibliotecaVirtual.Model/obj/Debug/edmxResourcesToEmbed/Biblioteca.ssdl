@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BibliotecaVirtualModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ALUNO">
+    <Key>
+      <PropertyRef Name="ID_ALUNO" />
+    </Key>
+    <Property Name="ID_ALUNO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SOBRENOME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CPF" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="NASC" Type="datetime" Nullable="false" />
+    <Property Name="ENDERECO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BAIRRO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CIDADE" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="UF" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="CEP" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="PAIS" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TEL_RES" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="TEL_CEL" Type="varchar" MaxLength="14" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AUTOR">
+    <Key>
+      <PropertyRef Name="ID_AUTOR" />
+    </Key>
+    <Property Name="ID_AUTOR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SOBRENOME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BIOGRAFIA" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SITE" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EDITORA">
+    <Key>
+      <PropertyRef Name="ID_EDITORA" />
+    </Key>
+    <Property Name="ID_EDITORA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ENDERECO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BAIRRO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CIDADE" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="UF" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CEP" Type="varchar" MaxLength="10" />
+    <Property Name="PAIS" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TEL_1" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="TEL_2" Type="varchar" MaxLength="14" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Emprestimo">
+    <Key>
+      <PropertyRef Name="ID_EMPRESTIMO" />
+      <PropertyRef Name="ID_ALUNO" />
+      <PropertyRef Name="ID_LIVRO" />
+      <PropertyRef Name="ID_EDITORA" />
+    </Key>
+    <Property Name="ID_EMPRESTIMO" Type="int" Nullable="false" />
+    <Property Name="ID_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_LIVRO" Type="int" Nullable="false" />
+    <Property Name="ID_EDITORA" Type="int" Nullable="false" />
+    <Property Name="DATA_EMP" Type="datetime" Nullable="false" />
+    <Property Name="DATA_DEVOL" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GENERO">
+    <Key>
+      <PropertyRef Name="ID_GENERO" />
+    </Key>
+    <Property Name="ID_GENERO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRICAO" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ANDAR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CORREDOR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRETELEIRA" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LIVRO">
+    <Key>
+      <PropertyRef Name="ID_LIVRO" />
+      <PropertyRef Name="ID_EDITORA" />
+    </Key>
+    <Property Name="ID_LIVRO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_EDITORA" Type="int" Nullable="false" />
+    <Property Name="TITULO" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="VOLUME" Type="int" Nullable="false" />
+    <Property Name="DATA_PUBLIC" Type="datetime" Nullable="false" />
+    <Property Name="QTD_EXMPLARES" Type="int" Nullable="false" />
+    <Property Name="QTD_DISP_EMPR" Type="int" Nullable="false" />
+    <Property Name="SUMARIO" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LivroAutor">
+    <Key>
+      <PropertyRef Name="ID_AUTOR" />
+      <PropertyRef Name="ID_LIVRO" />
+      <PropertyRef Name="ID_EDITORA" />
+    </Key>
+    <Property Name="ID_AUTOR" Type="int" Nullable="false" />
+    <Property Name="ID_LIVRO" Type="int" Nullable="false" />
+    <Property Name="ID_EDITORA" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LivroGenero">
+    <Key>
+      <PropertyRef Name="ID_LIVRO" />
+      <PropertyRef Name="ID_GENERO" />
+      <PropertyRef Name="ID_EDITORA" />
+    </Key>
+    <Property Name="ID_LIVRO" Type="int" Nullable="false" />
+    <Property Name="ID_GENERO" Type="int" Nullable="false" />
+    <Property Name="ID_EDITORA" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RESERVA">
+    <Key>
+      <PropertyRef Name="ID_RESERVA" />
+    </Key>
+    <Property Name="ID_RESERVA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DATA_RES" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReservaLivro">
+    <Key>
+      <PropertyRef Name="ID_LIVRO" />
+      <PropertyRef Name="ID_RESERVA" />
+      <PropertyRef Name="ID_EDITORA" />
+    </Key>
+    <Property Name="ID_LIVRO" Type="int" Nullable="false" />
+    <Property Name="ID_RESERVA" Type="int" Nullable="false" />
+    <Property Name="ID_EDITORA" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Emprestimo_0">
+    <End Role="ALUNO" Type="Self.ALUNO" Multiplicity="1" />
+    <End Role="Emprestimo" Type="Self.Emprestimo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ALUNO">
+        <PropertyRef Name="ID_ALUNO" />
+      </Principal>
+      <Dependent Role="Emprestimo">
+        <PropertyRef Name="ID_ALUNO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emprestimo_1">
+    <End Role="LIVRO" Type="Self.LIVRO" Multiplicity="1" />
+    <End Role="Emprestimo" Type="Self.Emprestimo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LIVRO">
+        <PropertyRef Name="ID_LIVRO" />
+        <PropertyRef Name="ID_EDITORA" />
+      </Principal>
+      <Dependent Role="Emprestimo">
+        <PropertyRef Name="ID_LIVRO" />
+        <PropertyRef Name="ID_EDITORA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LIVRO_0">
+    <End Role="EDITORA" Type="Self.EDITORA" Multiplicity="1" />
+    <End Role="LIVRO" Type="Self.LIVRO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EDITORA">
+        <PropertyRef Name="ID_EDITORA" />
+      </Principal>
+      <Dependent Role="LIVRO">
+        <PropertyRef Name="ID_EDITORA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LivroAutor_0">
+    <End Role="AUTOR" Type="Self.AUTOR" Multiplicity="1" />
+    <End Role="LivroAutor" Type="Self.LivroAutor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUTOR">
+        <PropertyRef Name="ID_AUTOR" />
+      </Principal>
+      <Dependent Role="LivroAutor">
+        <PropertyRef Name="ID_AUTOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LivroAutor_1">
+    <End Role="LIVRO" Type="Self.LIVRO" Multiplicity="1" />
+    <End Role="LivroAutor" Type="Self.LivroAutor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LIVRO">
+        <PropertyRef Name="ID_LIVRO" />
+        <PropertyRef Name="ID_EDITORA" />
+      </Principal>
+      <Dependent Role="LivroAutor">
+        <PropertyRef Name="ID_LIVRO" />
+        <PropertyRef Name="ID_EDITORA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LivroGenero_0">
+    <End Role="LIVRO" Type="Self.LIVRO" Multiplicity="1" />
+    <End Role="LivroGenero" Type="Self.LivroGenero" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LIVRO">
+        <PropertyRef Name="ID_LIVRO" />
+        <PropertyRef Name="ID_EDITORA" />
+      </Principal>
+      <Dependent Role="LivroGenero">
+        <PropertyRef Name="ID_LIVRO" />
+        <PropertyRef Name="ID_EDITORA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LivroGenero_1">
+    <End Role="GENERO" Type="Self.GENERO" Multiplicity="1" />
+    <End Role="LivroGenero" Type="Self.LivroGenero" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GENERO">
+        <PropertyRef Name="ID_GENERO" />
+      </Principal>
+      <Dependent Role="LivroGenero">
+        <PropertyRef Name="ID_GENERO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReservaLivro_0">
+    <End Role="LIVRO" Type="Self.LIVRO" Multiplicity="1" />
+    <End Role="ReservaLivro" Type="Self.ReservaLivro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LIVRO">
+        <PropertyRef Name="ID_LIVRO" />
+        <PropertyRef Name="ID_EDITORA" />
+      </Principal>
+      <Dependent Role="ReservaLivro">
+        <PropertyRef Name="ID_LIVRO" />
+        <PropertyRef Name="ID_EDITORA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReservaLivro_1">
+    <End Role="RESERVA" Type="Self.RESERVA" Multiplicity="1" />
+    <End Role="ReservaLivro" Type="Self.ReservaLivro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RESERVA">
+        <PropertyRef Name="ID_RESERVA" />
+      </Principal>
+      <Dependent Role="ReservaLivro">
+        <PropertyRef Name="ID_RESERVA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BibliotecaVirtualModelStoreContainer">
+    <EntitySet Name="ALUNO" EntityType="Self.ALUNO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AUTOR" EntityType="Self.AUTOR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EDITORA" EntityType="Self.EDITORA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Emprestimo" EntityType="Self.Emprestimo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GENERO" EntityType="Self.GENERO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LIVRO" EntityType="Self.LIVRO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LivroAutor" EntityType="Self.LivroAutor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LivroGenero" EntityType="Self.LivroGenero" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RESERVA" EntityType="Self.RESERVA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReservaLivro" EntityType="Self.ReservaLivro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Emprestimo_0" Association="Self.FK_Emprestimo_0">
+      <End Role="ALUNO" EntitySet="ALUNO" />
+      <End Role="Emprestimo" EntitySet="Emprestimo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emprestimo_1" Association="Self.FK_Emprestimo_1">
+      <End Role="LIVRO" EntitySet="LIVRO" />
+      <End Role="Emprestimo" EntitySet="Emprestimo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LIVRO_0" Association="Self.FK_LIVRO_0">
+      <End Role="EDITORA" EntitySet="EDITORA" />
+      <End Role="LIVRO" EntitySet="LIVRO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LivroAutor_0" Association="Self.FK_LivroAutor_0">
+      <End Role="AUTOR" EntitySet="AUTOR" />
+      <End Role="LivroAutor" EntitySet="LivroAutor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LivroAutor_1" Association="Self.FK_LivroAutor_1">
+      <End Role="LIVRO" EntitySet="LIVRO" />
+      <End Role="LivroAutor" EntitySet="LivroAutor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LivroGenero_0" Association="Self.FK_LivroGenero_0">
+      <End Role="LIVRO" EntitySet="LIVRO" />
+      <End Role="LivroGenero" EntitySet="LivroGenero" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LivroGenero_1" Association="Self.FK_LivroGenero_1">
+      <End Role="GENERO" EntitySet="GENERO" />
+      <End Role="LivroGenero" EntitySet="LivroGenero" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReservaLivro_0" Association="Self.FK_ReservaLivro_0">
+      <End Role="LIVRO" EntitySet="LIVRO" />
+      <End Role="ReservaLivro" EntitySet="ReservaLivro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReservaLivro_1" Association="Self.FK_ReservaLivro_1">
+      <End Role="RESERVA" EntitySet="RESERVA" />
+      <End Role="ReservaLivro" EntitySet="ReservaLivro" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
