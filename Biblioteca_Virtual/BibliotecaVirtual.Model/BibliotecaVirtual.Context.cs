@@ -18,6 +18,7 @@ namespace Biblioteca.Model
         public BibliotecaVirtualEntities()
             : base("name=BibliotecaVirtualEntities")
         {
+            Configuration.ProxyCreationEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

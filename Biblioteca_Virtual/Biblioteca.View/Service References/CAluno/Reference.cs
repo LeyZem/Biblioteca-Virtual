@@ -33,11 +33,11 @@ namespace Biblioteca.View.CAluno {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICAluno/Selecionar", ReplyAction="http://tempuri.org/ICAluno/SelecionarResponse")]
         System.Threading.Tasks.Task<Biblioteca.Model.ALUNO> SelecionarAsync(int idAluno);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICAluno/teste", ReplyAction="http://tempuri.org/ICAluno/testeResponse")]
-        bool teste(Biblioteca.Model.ALUNO oAluno);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICAluno/SelecionarCPF", ReplyAction="http://tempuri.org/ICAluno/SelecionarCPFResponse")]
+        Biblioteca.Model.ALUNO SelecionarCPF(string CPFAluno);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICAluno/teste", ReplyAction="http://tempuri.org/ICAluno/testeResponse")]
-        System.Threading.Tasks.Task<bool> testeAsync(Biblioteca.Model.ALUNO oAluno);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICAluno/SelecionarCPF", ReplyAction="http://tempuri.org/ICAluno/SelecionarCPFResponse")]
+        System.Threading.Tasks.Task<Biblioteca.Model.ALUNO> SelecionarCPFAsync(string CPFAluno);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -91,12 +91,12 @@ namespace Biblioteca.View.CAluno {
             return base.Channel.SelecionarAsync(idAluno);
         }
         
-        public bool teste(Biblioteca.Model.ALUNO oAluno) {
-            return base.Channel.teste(oAluno);
+        public Biblioteca.Model.ALUNO SelecionarCPF(string CPFAluno) {
+            return base.Channel.SelecionarCPF(CPFAluno);
         }
         
-        public System.Threading.Tasks.Task<bool> testeAsync(Biblioteca.Model.ALUNO oAluno) {
-            return base.Channel.testeAsync(oAluno);
+        public System.Threading.Tasks.Task<Biblioteca.Model.ALUNO> SelecionarCPFAsync(string CPFAluno) {
+            return base.Channel.SelecionarCPFAsync(CPFAluno);
         }
     }
 }

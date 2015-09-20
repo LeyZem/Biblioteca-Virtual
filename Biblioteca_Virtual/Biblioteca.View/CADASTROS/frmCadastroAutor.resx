@@ -151,7 +151,7 @@
         EiaHCQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnNovo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAlterar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAJFJREFUWEft
         18ENQEAUhOEtSQlKUIJOKEEHWlCCzphJnMTyvLfLZSb5EwfZ/U4S6bQJbc4aNKIeubeiq8MttYgAPrsR
@@ -159,7 +159,7 @@
         AAEEEEAAAX4HRH7PrfGOYynta0XuUpITUy8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnSalvar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnInserir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAUFJREFUWEe9
         l4ttwkAQRCmBElJCOiClpAQ6IB1AB0kJ6QA6oBTSQZhBvuiyvDMWPu9IT4LZ24+NtRYraS324iJ+A2/C

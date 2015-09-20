@@ -37,8 +37,8 @@
             this.txt_Nome = new System.Windows.Forms.TextBox();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnInserir = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -83,6 +83,7 @@
             this.btnProcurar.Size = new System.Drawing.Size(31, 26);
             this.btnProcurar.TabIndex = 54;
             this.btnProcurar.UseVisualStyleBackColor = false;
+            this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
             // label2
             // 
@@ -155,44 +156,47 @@
             this.btnCancelar.Size = new System.Drawing.Size(36, 34);
             this.btnCancelar.TabIndex = 27;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnNovo
+            // btnAlterar
             // 
-            this.btnNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNovo.BackColor = System.Drawing.Color.Transparent;
-            this.btnNovo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNovo.BackgroundImage")));
-            this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNovo.FlatAppearance.BorderSize = 0;
-            this.btnNovo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnNovo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovo.ForeColor = System.Drawing.Color.Transparent;
-            this.btnNovo.Location = new System.Drawing.Point(13, 11);
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(33, 34);
-            this.btnNovo.TabIndex = 26;
-            this.btnNovo.UseVisualStyleBackColor = false;
+            this.btnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlterar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlterar.BackgroundImage")));
+            this.btnAlterar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlterar.FlatAppearance.BorderSize = 0;
+            this.btnAlterar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlterar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAlterar.Location = new System.Drawing.Point(13, 11);
+            this.btnAlterar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(33, 34);
+            this.btnAlterar.TabIndex = 26;
+            this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // btnSalvar
+            // btnInserir
             // 
-            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalvar.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalvar.BackgroundImage")));
-            this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSalvar.Location = new System.Drawing.Point(70, 11);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(34, 34);
-            this.btnSalvar.TabIndex = 25;
-            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnInserir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInserir.BackColor = System.Drawing.Color.Transparent;
+            this.btnInserir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInserir.BackgroundImage")));
+            this.btnInserir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnInserir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInserir.FlatAppearance.BorderSize = 0;
+            this.btnInserir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnInserir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnInserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInserir.ForeColor = System.Drawing.Color.Transparent;
+            this.btnInserir.Location = new System.Drawing.Point(70, 11);
+            this.btnInserir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(34, 34);
+            this.btnInserir.TabIndex = 25;
+            this.btnInserir.UseVisualStyleBackColor = false;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // label3
             // 
@@ -298,8 +302,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnNovo);
-            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnInserir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCadastroAutor";
             this.Text = "CADASTRO DE AUTOR";
@@ -321,8 +325,8 @@
         private System.Windows.Forms.TextBox txt_Nome;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtID;

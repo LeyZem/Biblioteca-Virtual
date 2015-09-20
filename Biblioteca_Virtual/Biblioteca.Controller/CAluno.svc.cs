@@ -40,5 +40,10 @@ namespace Biblioteca.Controller
         {
             return AlunoMetod.Selecionar(idAluno);
         }
+
+        public ALUNO SelecionarCPF(string CPFAluno)
+        {
+            return AlunoMetod.SelecionarCPF(CPFAluno);
+        }
     }
 }

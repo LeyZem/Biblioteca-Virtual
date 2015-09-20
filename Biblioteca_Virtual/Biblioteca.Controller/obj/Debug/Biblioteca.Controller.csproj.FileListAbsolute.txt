@@ -13,8 +13,10 @@ D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Bibliotec
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\Biblioteca.Controller.pdb
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\Biblioteca.Model.dll
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\EntityFramework.dll
+D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\EntityFramework.SqlServer.dll
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\Biblioteca.Model.pdb
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\EntityFramework.xml
+D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\bin\EntityFramework.SqlServer.xml
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\obj\Debug\Biblioteca.Controller.csprojResolveAssemblyReference.cache
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\obj\Debug\Biblioteca.Controller.dll
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.Controller\obj\Debug\Biblioteca.Controller.pdb

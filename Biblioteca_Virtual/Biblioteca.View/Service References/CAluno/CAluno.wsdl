@@ -25,11 +25,11 @@
   <wsdl:message name="ICAluno_Selecionar_OutputMessage">
     <wsdl:part name="parameters" element="tns:SelecionarResponse" />
   </wsdl:message>
-  <wsdl:message name="ICAluno_teste_InputMessage">
-    <wsdl:part name="parameters" element="tns:teste" />
+  <wsdl:message name="ICAluno_SelecionarCPF_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarCPF" />
   </wsdl:message>
-  <wsdl:message name="ICAluno_teste_OutputMessage">
-    <wsdl:part name="parameters" element="tns:testeResponse" />
+  <wsdl:message name="ICAluno_SelecionarCPF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarCPFResponse" />
   </wsdl:message>
   <wsdl:portType name="ICAluno">
     <wsdl:operation name="Cadastrar">
@@ -44,9 +44,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/ICAluno/Selecionar" message="tns:ICAluno_Selecionar_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICAluno/SelecionarResponse" message="tns:ICAluno_Selecionar_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="teste">
-      <wsdl:input wsaw:Action="http://tempuri.org/ICAluno/teste" message="tns:ICAluno_teste_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ICAluno/testeResponse" message="tns:ICAluno_teste_OutputMessage" />
+    <wsdl:operation name="SelecionarCPF">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICAluno/SelecionarCPF" message="tns:ICAluno_SelecionarCPF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICAluno/SelecionarCPFResponse" message="tns:ICAluno_SelecionarCPF_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICAluno" type="tns:ICAluno">
@@ -78,8 +78,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="teste">
-      <soap:operation soapAction="http://tempuri.org/ICAluno/teste" style="document" />
+    <wsdl:operation name="SelecionarCPF">
+      <soap:operation soapAction="http://tempuri.org/ICAluno/SelecionarCPF" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

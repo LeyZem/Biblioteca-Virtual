@@ -27,8 +27,6 @@ C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.exe
 C:\Users\-Fabs\Documents\GitHub\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.pdb
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.exe.config
-D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.exe
-D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.pdb
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.exe
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.View.pdb
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\bin\Debug\Biblioteca.Controller.dll
@@ -53,3 +51,5 @@ D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Bibliotec
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.frmPrincipal.resources
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.Properties.Resources.resources
 D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.csproj.GenerateResource.Cache
+D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.exe
+D:\OneDrive\Faculdade\2015\SistemasDesktop\Projetos\Biblioteca-Virtual\Biblioteca_Virtual\Biblioteca.View\obj\Debug\Biblioteca.View.pdb
